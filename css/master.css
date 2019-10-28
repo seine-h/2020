@@ -109,18 +109,27 @@ main section {width: calc(100wv - 250px); float: left;}
 
 .linkArea > a:hover {background: rgba(255,255,255,1); }
 .pt-section.wrapAll {width: 100%; overflow-x: hidden;}
-.pt-section.wrapAll img {position: relative; left:50%; margin-left: -1000px}
+.pt-section.wrapAll > img {position: relative; left:50%; margin-left: -1000px}
 .pt-section.wrapSmall {width: 1180px; margin: 0 auto;}
-.pt-section.wrapSmall img {display: block; width: 100%;}
-
+.pt-section.wrapSmall > img {display: block; width: 100%;}
 
 h2.sub-title {font-size:36px; text-align: center; font-family: 'Abril Fatface'; color:#222; margin: 7rem 0 2rem; position: relative; padding-top: 60px}
 h2.sub-title:before {content:"";position: absolute; width:1px; height: 50px; background: #222; display: block; left:50%; top:0;}
 p.tac {text-align: center;}
 
+.img-wrap-rn-2,
+.img-wrap-rn-1 {width: 100%; max-width: 1200px; margin: 60px auto;}
+.img-wrap-rn-1::after {content: ""; display: block; clear: both;}
+.img-wrap-rn-1 figure {width: 23%; float: left; margin-right: 2.666%;}
+.img-wrap-rn-1 figure:last-child {margin-right: 0%;}
+.img-wrap-rn-1 figure img {width: 100%;}
 
+.img-wrap-rn-2 figure {width: 100%; max-width: 1200px;}
+.img-wrap-rn-2 figure img {width: 100%;}
 
-
+.img-wrap-rn-3 {margin: 100px auto;}
+.img-wrap-rn-3 figure {height: auto; background: url('../img/rn_6_2000.png')}
+.img-wrap-rn-3 figure img {width: 100%;}
 
 @media all and (max-width:640px){
 
