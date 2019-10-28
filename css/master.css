@@ -84,7 +84,8 @@ main section {width: calc(100wv - 250px); float: left;}
   width: 14px;
   height: 14px;
   position: relative;
-  background-color: #ebe9ea;
+  background-color: none;
+  border:1px solid #000;
   margin-bottom: 10px;
   list-style-type: none;
   -webkit-border-radius: 30px;
@@ -97,14 +98,9 @@ main section {width: calc(100wv - 250px); float: left;}
   display: block;
 }
 .progress-tracker ul li .pt-description {
-  display: none;
-  position: absolute;
-  top: -2px;
-  right: 25px;
-	font-size: 12px;
-  white-space:nowrap;
+  display: none; position: absolute;  top: -2px; right: 25px; font-size: 12px; white-space:nowrap; color:#000;
 }
-.progress-tracker ul li.active { background-color: #0070a4; border-color: #0070a4;}
+.progress-tracker ul li.active { background-color: #000; border-color: #000;}
 .progress-tracker.constant ul li.active .pt-description {display: block;}
 
 .linkArea {width: 54px; height: 54px; background: rgba(255,255,255,.5); position: fixed; border: 1px solid #fff; left:50px; top: 50px; z-index: 3;}
@@ -112,7 +108,7 @@ main section {width: calc(100wv - 250px); float: left;}
 .linkArea > a span {display: block;text-align: center; font-size: 16px; padding-top: 12px}
 
 .linkArea > a:hover {background: rgba(255,255,255,1); }
-.pt-section.wrapAll {width: calc(100vw - 17px); overflow-x: hidden;}
+.pt-section.wrapAll {width: 100%; overflow-x: hidden;}
 .pt-section.wrapAll img {position: relative; left:50%; margin-left: -1000px}
 .pt-section.wrapSmall {width: 1180px; margin: 0 auto;}
 .pt-section.wrapSmall img {display: block; width: 100%;}
